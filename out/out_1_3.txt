@@ -1,0 +1,5 @@
+('whole milk', 2192)
+('other vegetables', 1679)
+('rolls/buns', 1245)
+('soda', 1017)
+('tropical fruit', 1015)
