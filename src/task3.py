@@ -62,4 +62,7 @@ end_events = df_enriched.filter(
 # -------------------------------------------------------------------------
 final_output_df = start_events.union(end_events).orderBy("UserID", "ActionDate")
 
-final_output_df.show()
+final_output_df.coalesce(1).write\
+    .mode('overwrite')\
+    .option('header', True)\
+    .csv("C:/Users/Sakshi/PycharmProjects/PythonProject/OSN/out/out_3")
