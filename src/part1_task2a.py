@@ -1,7 +1,8 @@
+#Part 1(Spark API) Task 2a
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode, array, col
 
-spark = SparkSession.builder.appName('osn').getOrCreate()
+spark = SparkSession.builder.appName('part1_task2a').getOrCreate()
 
 df = spark.read.csv(r'C:\Users\Sakshi\PycharmProjects\PythonProject\OSN\raw_data\groceries.csv', header=False, inferSchema=True)
 
