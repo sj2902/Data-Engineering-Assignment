@@ -1,9 +1,10 @@
+#Part 3(Data Modelling)
 from pyspark.sql import SparkSession
 from pyspark.sql.window import Window
 from pyspark.sql.functions import col, lag, lead, to_date, when, lit, create_map
 
 # Initialize Spark Session
-spark = SparkSession.builder.appName("SubscriptionLifecycle").getOrCreate()
+spark = SparkSession.builder.appName("part3_SubscriptionLifecycle").getOrCreate()
 
 # 1. Create the Sample Input DataFrame
 data = [
